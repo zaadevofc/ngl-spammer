@@ -1,6 +1,6 @@
 import NGL from './src/NGL.js'
 
-const bot = new NGL('kejaazz34819', {
+const bot = new NGL('andya_aime', {
   random: true
 })
 bot.sent({
