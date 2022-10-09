@@ -19,9 +19,9 @@ function showTime() {
   var curr_minute = today.getMinutes();
   var curr_second = today.getSeconds();
   if (curr_hour < 12) {
-    a_p = "AM";
-  } else {
     a_p = "PM";
+  } else {
+    a_p = "AM";
   }
   if (curr_hour == 0) {
     curr_hour = 12;
