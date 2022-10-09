@@ -5,6 +5,13 @@ import UserAgents from 'user-agents';
 const chance = new Chance();
 const userAgent = new UserAgents();
 
+function checkTime(i) {
+  if (i < 10) {
+    i = "0" + i;
+  }
+  return i;
+}
+
 function showTime() {
   var a_p = "";
   var today = new Date();
@@ -27,13 +34,6 @@ function showTime() {
   curr_second = checkTime(curr_second);
   let res = curr_hour + ":" + curr_minute + ":" + curr_second + " " + a_p;
   return res
-}
-
-function checkTime(i) {
-  if (i < 10) {
-    i = "0" + i;
-  }
-  return i;
 }
 
 function showDate () {
